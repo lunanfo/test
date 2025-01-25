@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Infuse.png 
 
 [Argument]
-ThirdParty = input, ，tag=Emby Server,desc=添加Emby服务器地址
+ThirdParty = input,""，tag=Emby Server,desc=添加Emby服务器地址
 
 [rewrite_local]
 http-request ^https?:\/\/.*\/Items\?.*SearchTerm=[@$#!] tag=EmbySearchModifier, script-path=https://raw.githubusercontent.com/lunanfo/Task/master/Scripts/emby-search-modifier.js
